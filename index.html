@@ -1,17 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Prontuário Eletrônico do Hospital</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-  <ol>
-   <li>java</li>
-   <li>phb</li>
-   <li>python</li>
-  </ol>
+
+    <h1>Prontuário Eletrônico</h1>
+
+    <div>
+      <label for="Nome Completo">Nome Completo:</label>
+      <input type="text" name="Nome Completo"> 
+    </div> <br>
+
+    <div>
+        <label for="Data de Nascimento">Data de Nascimento:</label>
+        <input type="date" name="Data de Nascimento">
+    </div> <br>
+
+    <div>
+        <label for="Telefone">Telefone:</label>
+        <input Type="text" name="Telefone">
+    </div> <br>
+
+    <div>
+         <label for="E-mail">E-mail:</label>
+         <input type="text" name="E-mail">
+    </div> <br>
+
+    <div>
+         <label for="CPF">CPF:</label>
+         <input type="text" name="CPF">
+    </div> <br>
     
+    <div>
+         <label for="Senha">Senha:</label>
+         <input type="password" name="Senha">
+
+    </div> <br>
+
+    <div>
+         <label for="Gênero">Gênero:</label>
+         <select>
+            <option value="Masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+         </select>
+    </div> <br>
+
+    <div>
+         <label for=" Altura (em cm)">Altura (em cm):</label>
+         <input type="number" name="Altura (em cm)" step="1" min="0">
+         
+
+    </div> <br>
+
+
+    
+    <form>
+        
+        <!--subir arquivo para o site-->
+        <label for="foto">Foto do Paciente:</label>
+        <input type="file" name="foto"><br><br>
+        
+        <!--inserir texto com quebra de linha-->
+        <label for="notas">Notas Adicionais:</label><br>
+        <textarea name="notas" rows="4" cols="50"></textarea><br><br>
+        
+    </form>
+
 </body>
 </html>
+
+
